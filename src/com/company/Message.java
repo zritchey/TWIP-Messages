@@ -13,7 +13,7 @@ public class Message {
     private final String  time;
     public final  String timestamp;
     private static String daytime;
-    private String number;
+    public final String number;
     public final String Sender;
 
     public Message(String t,String nbr,String Send){
@@ -42,7 +42,7 @@ public class Message {
         return df.format(new Date());
     }
     public String getText(){
-        return text+"\n\t\t"+date;
+        return text+"\n\t\t"+timestamp;
     }
 
 }

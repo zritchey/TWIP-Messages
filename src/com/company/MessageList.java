@@ -4,12 +4,11 @@ import java.util.ArrayList;
 
 public class MessageList {
     public ArrayList<Message> AllMessages=new ArrayList<Message>();
-    private int NextIndex;
+
     private String number;
 
-
     public MessageList(String number){
-        NextIndex=1;
+
         this.number=number;
     }
     public void add(Message msg){
@@ -45,8 +44,11 @@ public class MessageList {
             this.remove(indx);
         }
         else{
-            System.out.println("That conversation  does not exist.");
+            System.out.println("The conversation you are sending a message to does not exist.");
         }
+    }
+    public String getName(){
+        return number;
     }
 
 }
