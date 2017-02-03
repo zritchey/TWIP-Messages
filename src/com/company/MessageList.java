@@ -25,11 +25,6 @@ public class MessageList {
 
 
     }
-    public void delete(){
-        for(int j=AllMessages.size();j>0;j--){
-            remove(j);
-        }
-    }
     public void display(){
         System.out.println("Conversation With: "+number);
         for (Message m:AllMessages) {
@@ -47,6 +42,7 @@ public class MessageList {
             System.out.println("The conversation you are sending a message to does not exist.");
         }
     }
+
     public String getName(){
         return number;
     }
